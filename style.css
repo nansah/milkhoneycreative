@@ -1,44 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
-    background-color: #FAF9F7;
+    background-color: tan;
+    margin: 1em;
 }
 
 .nav {
     float: right;
+    margin: 0 0 0 32px;
 }
 
+.nav a {
+    margin: 0 0 0 16px;
+    padding-right: 32px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial-section {}
+
+.testimonial-section h3 {
+    padding: 1em;
+}
+
+.testimonial-section p {
+    padding: 1em;
+}
+
+.rounded-circle {
+    padding: 1em;
+}
 
 h1 {
     font-family: "Playfair Display", serif;
     color: black;
 }
 
-p {
+h2 {
+    font-family: "Playfair Display", serif;
     color: black;
 }
 
-.about1 {
-    float: left;
+h3 {
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 1.5em;
 }
 
-.footer {
+p {
+    color: black;
+    font-family: "Arial";
+
+}
+
+
+footer {
     background-color: #EDE6DE;
     height: 100px;
-    max-width: 100%;
+    display: block;
+    align-items: flex-start;
 }
 
-.footer-right {
-    float: right;
+footer a {
+    margin: 0 32px 0 32px;
 }
 
 img {
-    height: 100%;
-    width: 50%;
+    width: 500px;
+    height: auto;
 }
 
 .logo {
     float: left;
+}
+
+.logo img {
+    height: 100%;
+    width: 50%;
 }
 
 a {
@@ -54,5 +97,21 @@ a:hover {
     color: white;
     height: 50px;
     width: 200px;
+}
 
+.servicescontainer {
+    display: flexbox;
+}
+
+#brandingcard {
+    flex: 1;
+}
+
+
+#websitecard {
+    flex: 1;
+}
+
+#uxcard {
+    flex: 1;
 }

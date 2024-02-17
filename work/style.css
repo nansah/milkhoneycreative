@@ -130,13 +130,6 @@ span {
     width: 200px;
 }
 
-#servicesworkbutton {
-    background-color: #652005;
-    color: white;
-    height: 50px;
-    width: 200px;
-}
-
 .servicescontainer {
     display: flexbox;
 }
@@ -144,7 +137,6 @@ span {
 #brandingcard {
     flex: 1;
 }
-
 
 #websitecard {
     flex: 1;
@@ -194,18 +186,24 @@ span {
     padding: 1em;
 }
 
-.card #book-service {
-    background-color: #652005;
-    border: none;
-    border-radius: 0px;
-}
-
 button {
     padding: .5em;
     background-color: #BF8030;
     color: #ffffff;
     text-transform: uppercase;
     border: none;
+}
+
+.btn .btn-primary {
+    background-color: #652005;
+    color: white;
+    padding: 1em;
+}
+
+.btn-primary a:hover {
+    background-color: #652005;
+    color: white;
+    padding: 1em;
 }
 
 #intro {

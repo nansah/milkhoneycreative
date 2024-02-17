@@ -5,6 +5,18 @@ body {
     background-color: #ffffff;
 }
 
+.nav {
+    display: flex;
+    float: top;
+    margin: 1em;
+}
+
+.nav a {
+    padding: 1em;
+}
+
+
+
 #boujee-banker-header {
     background-color: #FDECE8;
 }
@@ -84,4 +96,23 @@ h3 {
 
 #mockups img {
     padding: 1em;
+}
+
+#boujee-banker-logo {
+    padding: 1em;
+}
+
+#boujebankerfooter {
+    padding: 1em;
+}
+
+#boujebankerfooter .logo {
+    padding: 1em;
+}
+
+#boujee-freebie-button {
+    background-color: pink;
+    color: black;
+    border-radius: .5px;
+    border-color: black;
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="logo"><img src="mhc-logo.png" alt="logo"></div>
+    <div class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</header>
+
+<body>
+    <h1>Let's Chat!</h1>
+    <p>Please fill out this form with the required information</p>
+    <img src="Black+Woman+on+Laptop+Stock+Image.jpeg" alt="Black woman on laptop" class="imgfluid">
+    <br>
+    <form>
+
+        <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputName">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputBusinessName" class="form-label">Business Name</label>
+            <input type="text" class="form-control" id="exampleInputBusinessName">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputWebsite" class="form-label">Website URL</label>
+            <input type="text" class="form-control" id="exampleInputWebsite">
+        </div>
+        <div>
+            <label for="exampleInputServices" class="form-label"> What type of project are you interested in?</label>
+            <br><select class="form-select" aria-label="Default select example">
+                <option value="1">Custom Website Design</option>
+                <option value="2">Branding Identity & Strategy</option>
+                <option value="3">Website Restyling </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputInvestment" class="form-label">How much would you like to invest?</label>
+            <input type="text" class="form-control" id="exampleInputInvestment">
+        </div>
+        <br>
+        <div>
+            <label for="exampleInputDiscovery" class="form-label">How did you hear about us?</label>
+            <br><select class="form-select" aria-label="Default select example">
+                <option value="1">Instagram</option>
+                <option value="2">Google</option>
+                <option value="3">Referral</option>
+                <option value="3">Other</option>
+            </select>
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-warning">Submit</button>
+
+    </form>
+</body>

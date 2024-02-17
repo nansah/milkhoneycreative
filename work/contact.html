@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="logo"><img src="mhc-logo.png" alt="logo"></div>
+    <div class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <button>Schedule a Call</button>
+    </div>
+
+</header>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Let's Chat!</h1>
+        </div>
+        <div class="row">
+            <p>Please fill out this form with the required information</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="Black+Woman+on+Laptop+Stock+Image.jpeg" alt="Black woman on laptop" width="500px"
+                    id="imgfluid">
+            </div>
+            <div class="col">
+                <form action='mailto:nanayaa.ansah@gmail.com' method="post" name=”EmailForm”>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName">
+                    </div>
+                    <br><br>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputBusinessName" class="form-label">Business Name</label>
+                        <input type="text" class="form-control" id="exampleInputBusinessName">
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="exampleInputWebsite" class="form-label">Website URL</label>
+                        <input type="text" class="form-control" id="exampleInputWebsite">
+                    </div>
+                    <br><br>
+                    <div>
+                        <label for="exampleInputServices" class="form-label"> What type of project are you interested
+                            in?</label>
+                        <br><select class="form-select" aria-label="Default select example">
+                            <option value="1">Custom Website Design</option>
+                            <option value="2">Branding Identity & Strategy</option>
+                            <option value="3">Website Restyling </option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <label for="Launch Date">Website Launch Date</label>
+                    <br>
+                    <input type="date">
+                    <br><br>
+                    <div class="mb-3">
+                        <label for="exampleInputInvestment" class="form-label">How much will you invest in this
+                            project?</label>
+                        <input type="text" class="form-control" id="exampleInputInvestment">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="exampleInputDiscovery" class="form-label">How did you hear about us?</label>
+                        <br><select class="form-select" aria-label="Default select example">
+                            <option value="1">Instagram</option>
+                            <option value="2">Google</option>
+                            <option value="3">Referral</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+
+            </div>
+            <br><br>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="row" id="footer">
+        <div class="col-sm-4">
+            <img src="mhc-logo.png" width="150px">
+        </div>
+
+        <div class="col">
+            <div class="col-sm-3">
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+                <a href="about.html">
+                    <p>About</p>
+                </a>
+                <a href="work.html">
+                    <p>Work</p>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col-sm-4">
+                <a href="services.html">
+                    <p>Services</p>
+                </a>
+                <a href="contact.html">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <p>© Milk & Honey Creative Studio 2023. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

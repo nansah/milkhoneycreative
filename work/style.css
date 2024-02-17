@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-color: #FAF9F7;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.container {
+    margin-left: 1em 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.row {
+    padding: 2em;
+}
+
+.nav {
+    float: right;
+    margin: 2em;
+}
+
+.nav a {
+    padding: 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #5C4033;
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#intro {
+    padding: 4em 0em 4em 0em;
+}
+
+.rounded-circle {
+    padding: 1em;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    color: black;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    color: black;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 1.5em;
+}
+
+p {
+    color: black;
+    font-family: "Arial";
+
+}
+
+div {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer {
+    background-color: #EDE6DE;
+    height: 100px;
+    display: block;
+    align-items: flex-start;
+}
+
+footer a {
+    margin: 0 32px 0 32px;
+}
+
+img {
+    height: auto;
+}
+
+.logo {
+    float: left;
+    padding: 2em;
+}
+
+.logo img {
+    height: 100%;
+    width: 50%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #5C4033;
+    text-decoration: underline;
+}
+
+span {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 1s forwards;
+    animation-delay: .5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.work {
+    background-color: #652005;
+    color: white;
+    height: 50px;
+    width: 200px;
+}
+
+#servicesworkbutton {
+    background-color: #652005;
+    color: white;
+    height: 50px;
+    width: 200px;
+}
+
+.servicescontainer {
+    display: flexbox;
+}
+
+#brandingcard {
+    flex: 1;
+}
+
+
+#websitecard {
+    flex: 1;
+}
+
+#uxcard {
+    flex: 1;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("Website+Mockup+Banner.png");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em;
+}
+
+.parallax p {
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.founder-section {
+    padding-left: 3em;
+}
+
+#testimonial-container {
+    border: 2px solid tan;
+    background-color: #C3661E;
+    padding: 16px;
+    text-align: center;
+
+}
+
+.testimonial-section h3 {
+    padding: 1em;
+}
+
+.testimonial-section p {
+    padding: 1em;
+}
+
+.card #book-service {
+    background-color: #652005;
+    border: none;
+    border-radius: 0px;
+}
+
+button {
+    padding: .5em;
+    background-color: #BF8030;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+}
+
+#intro {
+    text-align: center;
+}
+
+span {
+    text-decoration: underline;
+    text-decoration-color: #BF8030;
+    text-decoration-thickness: 5px;
+    text-decoration-style: wavy;
+}
+
+#work-container {
+    background-color: #EDE6DE;
+    padding: 1em;
+}
+
+#work-container img {
+    width: 90%;
+    padding: .5em;
+}
+
+#ready-to-work {
+    vertical-align: center;
+}
+
+#footer {
+    background-color: tan;
+    color: black;
+    padding: 1em;
+}
+
+#testimonial-container p {
+    text-align: center;
+}
+
+#aliaintro {
+    background-color: #EDE6DE;
+}
+
+#aliaresults {
+    background-color: #EDE6DE;
+}

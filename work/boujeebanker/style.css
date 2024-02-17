@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body {
+    background-color: #ffffff;
+}
+
+#boujee-banker-header {
+    background-color: #FDECE8;
+}
+
+h1 h2 {
+    font-family: "Playfair Display", serif;
+}
+
+#recent-press {
+    background-color: #FCF5EF;
+    text-align: center;
+    padding: 1em;
+}
+
+#recent-press img {
+    padding: 1em;
+}
+
+#recentpressheader {}
+
+#latest-interviews {
+    background-color: #E9D4CA;
+}
+
+.col-sm-4 {
+    width: 1em;
+}
+
+#latest-interviews img {
+    max-width: 300px;
+    padding: 1em;
+    margin: 8px;
+}
+
+#courses-header {
+    padding: 1em;
+}
+
+h3 {
+    margin: 1em 0em 1em 0em;
+}
+
+#websiteaudit {
+    background-color: #EDE6DE;
+}
+
+#moodboard {
+    background-color: #FAF9F7;
+}
+
+#boujee-header-section {
+    background-color: #FAF9F7;
+}
+
+#boujee-viewsite {
+    background-color: 652005;
+    padding: .5em;
+}
+
+#boujee-viewsite a {
+    color: white;
+}
+
+#competitiveanalysis img {
+    width: 300px;
+    padding: 2em;
+}
+
+#mockups {
+    background-color: #C3661E;
+}
+
+#mockups h2 {
+    padding: 1em 0em 0em 1em;
+    color: white;
+}
+
+#mockups img {
+    padding: 1em;
+}

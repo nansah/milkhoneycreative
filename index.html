@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
@@ -19,7 +19,9 @@
         <a href="work.html">Work</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
+        <button>Schedule a Call</button>
     </div>
+
 </header>
 
 <body>
@@ -27,7 +29,7 @@
         <div class="row" id="intro">
             <div class="col">
                 <h2>
-                    Where Stunning Design Meets Purpose
+                    Where <span id="stunning-design">Stunning Design</span> Meets <span id="purpose">Purpose</span>
                 </h2>
             </div>
         </div>
@@ -39,6 +41,7 @@
             <p> Custom Website Design & Development</p>
             <p> Website Restyling</p>
             <br>
+            <a href="services.html"><button class="col-sm-3"> View Services </button></a>
         </div>
 
         <div class="row">
@@ -82,23 +85,25 @@
         </div>
         <div class="row">
             <div class="col">
+                <img src="House+of+Faith+Ministries.png" style="width:100%" />
+            </div>
+
+            <div class="col">
                 <h2>
-                    Our websites are more than just pretty faces.
-                </h2>
+                    Our websites are more than just pretty faces.<br>
+                </h2><br>
                 <p>As a kingdom-minded or Christian entrepreneur, you deserve a website that beautifully represents your
-                    values and inspires others to join you on your journey.
+                    values and inspires others to join you on your journey.<br><br>
                     Our mission is simple: to create visually stunning, high-converting, and user-friendly websites for
                     entrepreneurs who are passionate about making a difference in the world.</p>
             </div>
-            <div class="col">
-                <img src="House+of+Faith+Ministries.png" alt="House of Faith Website Mockup" class="img-fluid">
-            </div>
+
         </div>
 
 
         <div class="testimonial-section">
             <div class="row">
-                <div class="container" id="testimonial-container">
+                <div class="col-12" id="testimonial-container">
                     <img src="natalie+barbosa+nutrition+image+2+ (1).jpg" width="300px" id="imgfluid"
                         class="rounded-circle" alt="Avatar" />
                     <br>
@@ -113,25 +118,62 @@
             </div>
         </div>
 
+
         <div class="founder-section">
             <div class="row">
                 <div class="col">
-                    <h2>Nana Yaa Ansah, Founder </h2>
-                    <p> Hi there! I’m Nana Yaa, Founder of Milk & Honey Creative Studio. I specialize in website and
+                    <h2> Meet the Founder </h2>
+                    <p> Hi there! I’m Nana Yaa, Founder of Milk & Honey Creative Studio.
+                    <p>I specialize in website and
                         user experience
-                        design for kingdom minded businesses & entrepreneurs!
-                        My aim is to help you launch a beautiful yet functional website that captivates and transforms
-                        both your
-                        audience and business. <br><br><a href="contact2.html"> Let's work together!</a></p>
-                    <button id="learn-about-founder"><a href="about.html">Learn More</a></button>
+                        design for kingdom minded businesses & entrepreneurs!</p>
+                    <p>My aim is to help you launch a beautiful yet functional website that captivates and transforms
+                        both your audience and business.</p><a href="contact.html"> Let's work together!</a>
+                    </p>
+                    <a href="about.html"><button class="col-lg-6">Learn More</button></a>
                 </div>
                 <div class="col">
-                    <img src="Founder.jpeg" alt="Founder photo" class="img-fluid" />
+                    <img src="Founder.jpeg" alt="Founder photo" class="img-fluid" width="80%" />
                 </div>
             </div>
         </div>
     </div>
 
+    </div>
+
+    <div class="row" id="footer">
+        <div class="col-sm-4">
+            <img src="mhc-logo.png" width="150px">
+        </div>
+
+        <div class="col">
+            <div class="col-sm-3">
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+                <a href="about.html">
+                    <p>About</p>
+                </a>
+                <a href="work.html">
+                    <p>Work</p>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col-sm-4">
+                <a href="services.html">
+                    <p>Services</p>
+                </a>
+                <a href="contact.html">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div>© Milk & Honey Creative Studio 2023. All rights reserved. </div>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>

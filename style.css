@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     background-color: #FAF9F7;
@@ -16,6 +12,7 @@ body {
     background-color: #BF8030;
     color: white;
     text-transform: uppercase;
+    padding: .8em;
 }
 
 .btn:hover {
@@ -24,9 +21,11 @@ body {
     text-transform: uppercase;
 }
 
-.btn .btn-primary {
+.btn-primary {
     background-color: #652005;
     color: white;
+    border: none;
+    padding: .8em;
 }
 
 .row {
@@ -196,7 +195,6 @@ span {
 
 .parallax p {
     line-height: normal;
-    vertical-align: middle;
 }
 
 .founder-section {
@@ -268,6 +266,7 @@ span {
     min-height: 100%;
     display: flex;
     margin-top: auto;
+    padding: 2em;
 }
 
 #testimonial-container p {

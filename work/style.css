@@ -7,6 +7,22 @@ body {
 
 }
 
+.btn {
+    background-color: #BF8030;
+    color: white;
+}
+
+.btn a {
+    color: white;
+    background-color: #BF8030;
+}
+
+
+.btn a:hover {
+    background-color: #BF8030;
+    color: white
+}
+
 .container {
     margin-left: 1em 0px 0px 0px;
     padding: 0px 0px 0px 0px;

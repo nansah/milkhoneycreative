@@ -25,21 +25,14 @@
         .case-body p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1.2rem; }
         .case-body ul { color: var(--text-muted); line-height: 1.8; padding-left: 1.5rem; margin-bottom: 1.2rem; }
         .case-body ul li { margin-bottom: 0.4rem; }
-        .case-img-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
-        .case-img-grid img { width: 100%; border-radius: 4px; }
-        .case-img-full { margin: 2rem 0; }
-        .case-img-full img { width: 100%; border-radius: 4px; }
-        .case-stat { background: var(--cream); border-radius: 4px; padding: 2rem; text-align: center; }
         .case-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; }
+        .case-stat { background: var(--cream); border-radius: 4px; padding: 2rem; text-align: center; }
         .case-stat strong { display: block; font-family: var(--font-display); font-style: italic; font-size: 2.5rem; color: var(--gold); }
         .case-stat span { font-size: 0.85rem; color: var(--text-muted); }
         .case-cta { background: var(--espresso); color: var(--ivory); text-align: center; padding: 5rem 2rem; }
         .case-cta h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1rem; }
         .case-cta p { color: rgba(250,248,245,0.7); margin-bottom: 2rem; }
-        @media (max-width: 768px) {
-            .case-img-grid, .case-stat-grid { grid-template-columns: 1fr; }
-            .case-meta { gap: 1.5rem; }
-        }
+        @media (max-width: 768px) { .case-stat-grid { grid-template-columns: 1fr; } .case-meta { gap: 1.5rem; } }
     </style>
 </head>
 
@@ -109,12 +102,12 @@
         <h2>Results</h2>
         <div class="case-stat-grid">
             <div class="case-stat">
-                <strong>2×</strong>
-                <span>Growth in site visitors (91 → 194)</span>
+                <strong>2&times;</strong>
+                <span>Growth in site visitors (91 &rarr; 194)</span>
             </div>
             <div class="case-stat">
                 <strong>140%</strong>
-                <span>Increase in site sessions (94 → 225)</span>
+                <span>Increase in site sessions (94 &rarr; 225)</span>
             </div>
             <div class="case-stat">
                 <strong>Higher</strong>

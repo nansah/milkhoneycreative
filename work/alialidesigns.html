@@ -1,150 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alia Li Design Studio | Milk &amp; Honey Creative Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <style>
-        .case-hero { background: var(--cream); padding: 5rem 2rem 4rem; text-align: center; }
-        .case-hero .section-label { justify-content: center; }
-        .case-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 1rem 0 1.5rem; }
-        .case-hero p { max-width: 680px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem; }
-        .case-meta { display: flex; gap: 3rem; justify-content: center; margin-top: 2.5rem; flex-wrap: wrap; }
-        .case-meta-item { text-align: center; }
-        .case-meta-item strong { display: block; font-family: var(--font-display); font-style: italic; font-size: 0.85rem; color: var(--gold); margin-bottom: 0.25rem; }
-        .case-meta-item span { font-size: 0.9rem; color: var(--text-body); }
-        .case-hero-img { max-width: var(--container); margin: 3rem auto 0; padding: 0 2rem; }
-        .case-hero-img img { width: 100%; border-radius: 4px; }
-        .case-body { max-width: 860px; margin: 0 auto; padding: 5rem 2rem; }
-        .case-body h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); margin: 3rem 0 1rem; }
-        .case-body h2:first-child { margin-top: 0; }
-        .case-body p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1.2rem; }
-        .case-body ul { color: var(--text-muted); line-height: 1.8; padding-left: 1.5rem; margin-bottom: 1.2rem; }
-        .case-body ul li { margin-bottom: 0.4rem; }
-        .case-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; }
-        .case-stat { background: var(--cream); border-radius: 4px; padding: 2rem; text-align: center; }
-        .case-stat strong { display: block; font-family: var(--font-display); font-style: italic; font-size: 2.5rem; color: var(--gold); }
-        .case-stat span { font-size: 0.85rem; color: var(--text-muted); }
-        .case-cta { background: var(--espresso); color: var(--ivory); text-align: center; padding: 5rem 2rem; }
-        .case-cta h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1rem; }
-        .case-cta p { color: rgba(250,248,245,0.7); margin-bottom: 2rem; }
-        @media (max-width: 768px) { .case-stat-grid { grid-template-columns: 1fr; } .case-meta { gap: 1.5rem; } }
-    </style>
+    <link rel="stylesheet" href="/work/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </head>
+<header>
+    <div class="logo"><img src="/work/mhc-logo.png" alt="logo" width="300px"></div>
+    <div class="nav">
+        <a class="active" href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/work.html">Work</a>
+        <a href="/services.html">Services</a>
+        <a href="/contact.html">Contact</a>
+        <button>Schedule a Call</button>
+    </div>
+
+</header>
 
 <body>
-
-    <!-- NAVIGATION -->
-    <header class="mhc-header" id="site-header">
-        <div class="mhc-header-inner">
-            <a href="../index.html" class="mhc-logo-link">
-                <img src="../mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
-            </a>
-            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <nav class="mhc-nav" id="main-nav">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../work.html">Work</a>
-                <a href="../services.html">Services</a>
-                <a href="../contact.html">Contact</a>
-                <a href="https://calendly.com/milkhoneycreative" class="mhc-cta">Schedule a Call</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- CASE STUDY HERO -->
-    <section class="case-hero">
-        <span class="section-label">Web Design</span>
-        <h1>Alia Li Design Studio</h1>
-        <p>A full rebrand and product website redesign for a boutique interior and event design studio — built to attract premium clientele and drive consultation bookings.</p>
-        <div class="case-meta">
-            <div class="case-meta-item">
-                <strong>Services</strong>
-                <span>Brand Identity, UX Design, Web Development</span>
+    <div class="container">
+        <div class="row" id="aliaintro">
+            <div class="col">
+                <h2>Alia Li -Interior & Event Design Studio</h2><br>
+                <p> Alia LI was seeking to rebrand her business starting with a minimalist and elegant website redesign
+                    to
+                    attract her target audience.</p><br>
+                <br>
+                <h3>Services Provided: </h3>
+                <ul>Branding </ul>
+                <ul>Strategy </ul>
+                <ul> UX Website Design & Development</ul>
             </div>
-            <div class="case-meta-item">
-                <strong>Category</strong>
-                <span>Product Website</span>
-            </div>
-            <div class="case-meta-item">
-                <strong>Live Site</strong>
-                <span><a href="https://www.alialidesigns.com/" style="color:var(--gold);" target="_blank">alialidesigns.com</a></span>
+            <div class="col">
+                <img src="/work/images/alialidesigns/Alia+Li+Website+Hero.png">
+                <a href="https://www.alialidesigns.com/"><button> View Live Site </button></a>
             </div>
         </div>
-    </section>
 
-    <div class="case-hero-img reveal">
-        <img src="../Alia+Li+mockup.jpg" alt="Alia Li Design Studio mockup">
+        <div class="row" id="alia-problem">
+            <div class="col">
+                <img src="/work/images/alialidesigns/screencapture-alialidesigns-2022-03-08-23_21_15.png" id="img-fluid"
+                    width="500px">
+            </div>
+            <div class="col">
+                <h3>Problem</h3>
+                <p> Currently, the company is unable to vet clients and needs to implement an intake form </p>
+
+                <p> Company lacks testimonials and social proof and wants to increase trustworthiness</p>
+
+                <p>Not utilizing social media to generate leads as well</p>
+
+                <p> Portfolio lacks quality images and does not highlight her best work</p>
+
+                <p>Branding was inconsistent and seemed life a fashion blogger than an interior designer </p>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3> Moodboard</h3><br><br>
+            <img src="/work/images/alialidesigns/Alia+Li+Moodboard.png" width="600px">
+        </div>
+        <div class="row" id="aliaresults">
+            <div class="col">
+                <h2>Results</h2>
+                <p>
+                    One of the company’s goals was to attract higher end clientele, so we elevated her branding to
+                    feel
+                    more luxury and professional while implementing an intake form to vet clients.
+
+                <p>We also differentiated her work between Interior Design & Events Design with dedicated pages and
+                    portfolios for each </p>
+
+                <p> Since launching the site, website users have more than doubled from the previous year (91 to 194
+                    site visitors) and site sessions have increased 140% from 94 to 225. </p>
+            </div>
+            <div class="col">
+                <h2> After </h2>
+                <img src="/work/images/alialidesigns/screencapture-alialidesigns-2022-03-21-21_57_04.png" id="img-fluid"
+                    width="500px">
+            </div>
+        </div>
+    </div>
     </div>
 
-    <!-- CASE BODY -->
-    <div class="case-body">
+    <div class="row" id="footer">
+        <div class="col-sm-4">
+            <img src="mhc-logo.png" width="150px">
+        </div>
 
-        <h2>The Challenge</h2>
-        <p>Alia Li was a talented interior and event designer with a portfolio of stunning work — but her digital presence didn't reflect it. The existing site felt generic, lacked clear client intake, and failed to communicate the luxury tier she was operating in.</p>
-        <ul>
-            <li>No intake form to vet or qualify clients</li>
-            <li>Inconsistent branding that read more like a fashion blog than a design studio</li>
-            <li>Portfolio lacked quality imagery and didn't separate interior design from event design</li>
-            <li>No social proof or testimonials to build trust with prospective clients</li>
-        </ul>
-
-        <h2>The Approach</h2>
-        <p>I executed a full rebrand starting with a visual identity that felt minimalist, editorial, and unmistakably high-end. From there I redesigned the site architecture to separate her two service lines — Interior Design and Event Design — giving each dedicated portfolio pages with their own visual treatment.</p>
-        <p>An intake form was integrated from the outset, so every inquiry comes pre-qualified. The copy was sharpened to speak directly to premium clientele and position Alia as a sought-after creative, not just a service provider.</p>
-
-        <h2>Results</h2>
-        <div class="case-stat-grid">
-            <div class="case-stat">
-                <strong>2&times;</strong>
-                <span>Growth in site visitors (91 &rarr; 194)</span>
-            </div>
-            <div class="case-stat">
-                <strong>140%</strong>
-                <span>Increase in site sessions (94 &rarr; 225)</span>
-            </div>
-            <div class="case-stat">
-                <strong>Higher</strong>
-                <span>Caliber of inquiries post-launch</span>
+        <div class="col">
+            <div class="col-sm-3">
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+                <a href="about.html">
+                    <p>About</p>
+                </a>
+                <a href="work.html">
+                    <p>Work</p>
+                </a>
             </div>
         </div>
-        <p>Since launching the redesigned site, website users more than doubled and session volume increased 140% year-over-year. More importantly, the quality of inquiries improved — attracting the premium clientele Alia was designing for.</p>
-
+        <div class="col">
+            <div class="col-sm-4">
+                <a href="services.html">
+                    <p>Services</p>
+                </a>
+                <a href="contact.html">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div>© Milk & Honey Creative Studio 2023. All rights reserved. </div>
+        </div>
     </div>
-
-    <!-- CTA -->
-    <section class="case-cta">
-        <h2>Ready to build something?</h2>
-        <p>Book a discovery call and let's talk about your project.</p>
-        <a href="https://calendly.com/milkhoneycreative" class="btn-luxury primary">Schedule a Discovery Call</a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="mhc-footer">
-        <div class="mhc-footer-inner">
-            <div class="mhc-footer-logo">
-                <img src="../mhc-logo.svg" alt="Milk & Honey Creative Studio">
-            </div>
-            <nav class="mhc-footer-nav">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../work.html">Work</a>
-                <a href="../services.html">Services</a>
-                <a href="../contact.html">Contact</a>
-            </nav>
-            <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="../script.js"></script>
+    </div>
 </body>
-</html>

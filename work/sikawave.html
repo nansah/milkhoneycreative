@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SikaWave | Milk &amp; Honey Creative Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        .project-banner { background: var(--cream); padding: 5rem 2rem 3rem; text-align: center; border-bottom: 1px solid var(--border); }
+        .project-banner .section-label { justify-content: center; }
+        .project-banner h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 1rem 0 1rem; }
+        .project-banner p { max-width: 640px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem; }
+        .project-body { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+        .project-body h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-family: var(--font-display); font-style: italic; font-weight: 400; margin: 3rem 0 1rem; color: var(--espresso); }
+        .project-body h3 { font-size: 1.1rem; font-weight: 600; font-family: var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; font-style: normal; margin: 2rem 0 0.75rem; color: var(--espresso); }
+        .project-body p, .project-body li { color: var(--text-muted); line-height: 1.85; margin-bottom: 1rem; }
+        .project-body ul { padding-left: 1.5rem; margin-bottom: 1.2rem; }
+        .project-body img { width: 100%; border-radius: 4px; margin: 1rem 0; }
+        .project-row { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin: 3rem 0; }
+        .project-row.reverse { direction: rtl; }
+        .project-row.reverse > * { direction: ltr; }
+        .project-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+        .project-cta { background: var(--espresso); color: var(--ivory); text-align: center; padding: 5rem 2rem; }
+        .project-cta h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1rem; color: var(--ivory); font-style: italic; }
+        .project-cta p { color: rgba(250,248,245,0.7); margin-bottom: 2rem; }
+        .project-meta { display: flex; gap: 3rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; padding-top: 2rem; border-top: 1px solid var(--border); }
+        .project-meta-item { text-align: center; }
+        .project-meta-item strong { display: block; font-family: var(--font-display); font-style: italic; font-size: 0.8rem; color: var(--gold); margin-bottom: 0.2rem; letter-spacing: 0.05em; }
+        .project-meta-item span { font-size: 0.9rem; color: var(--text-body); }
+        .mobile-screens { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin: 2rem 0; }
+        .mobile-screens img { width: 100%; height: auto; max-height: 420px; object-fit: cover; object-position: top; border-radius: 12px; margin: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        @media (max-width: 768px) { .project-row { grid-template-columns: 1fr; } .project-row.reverse { direction: ltr; } .project-meta { gap: 1.5rem; } .mobile-screens { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .mobile-screens { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="mhc-header" id="site-header">
+        <div class="mhc-header-inner">
+            <a href="../index.html" class="mhc-logo-link">
+                <img src="../mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
+            </a>
+            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mhc-nav" id="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../work.html">Work</a>
+                <a href="../services.html">Services</a>
+                <a href="../contact.html">Contact</a>
+                <a href="https://calendly.com/milkhoneycreative" class="mhc-cta">Schedule a Call</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="project-banner">
+        <span class="section-label">Mobile App Design</span>
+        <h1>SikaWave</h1>
+        <p>A money transfer app that allows users in the United States to send funds quickly and securely to recipients in Ghana.</p>
+        <div class="project-meta">
+            <div class="project-meta-item">
+                <strong>Services</strong>
+                <span>Product Design, UX/UI, MVP Prototyping</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Platform</strong>
+                <span>Web &amp; Mobile</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Audience</strong>
+                <span>West African Diaspora</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT CONTENT -->
+    <div class="project-body">
+
+        <div class="project-row reveal">
+            <div>
+                <img src="../images/SikaWave Landing Page Hero.png" alt="SikaWave Landing Page Hero">
+            </div>
+            <div>
+                <h2>The Problem</h2>
+                <p>Sending money from the United States to Ghana is often slow, expensive, and lacking in transparency. Many platforms do not provide users with insight into their giving history, make it difficult to manage recurring family support, and offer little recourse if funds are sent to the wrong recipient.</p>
+                <p>The diaspora needs a solution that is fast, secure, and designed for real family needs—not just transactions.</p>
+            </div>
+        </div>
+
+        <hr class="project-divider">
+
+        <h2 style="text-align:center; margin-bottom: 2rem;">App Screens</h2>
+        <div class="mobile-screens reveal">
+            <img src="../images/sikawave_home.jpg" alt="SikaWave Home Screen">
+            <img src="../images/Sikawave_SendMoney.jpg" alt="SikaWave Send Money Screen">
+            <img src="../images/SikaWave_Family Wallet.jpg" alt="SikaWave Family Wallet Screen">
+            <img src="../images/SikaWave_Analyticsc.jpg" alt="SikaWave Analytics Screen">
+        </div>
+
+        <hr class="project-divider">
+
+        <div class="project-row reveal">
+            <div>
+                <h2>Competitive Research &amp; Unique Features</h2>
+                <p>I explored <strong>Sendwave</strong> as the main competitor and identified several opportunities to position SikaWave as a better solution for the diaspora.</p>
+                <h3>What sets SikaWave apart</h3>
+                <ul>
+                    <li><strong>Analytics Dashboard:</strong> Unlike Sendwave, SikaWave provides users with analytics to track the number of transactions, total amount sent, and giving history over time.</li>
+                    <li><strong>Cancellation Window:</strong> Added a short window after sending to allow users to cancel a transfer, based on feedback from Sendwave users who sometimes sent funds to the wrong recipient.</li>
+                    <li><strong>Family Wallet:</strong> Enables recurring transfers and intuitive management of family recipients, making it easy to support loved ones on a regular basis.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Project Highlights</h2>
+                <ul>
+                    <li>Send money from the U.S. to Ghana instantly and securely</li>
+                    <li>Connects U.S. payment methods to Ghanaian banks and mobile wallets</li>
+                    <li>Simple, modern interface for the diaspora community</li>
+                </ul>
+                <h2>My Role</h2>
+                <p>I led product design, UX/UI, and MVP prototyping for both web and mobile. My focus was on creating a seamless, trustworthy experience that addresses real pain points for the West African diaspora.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <h2>Ready to build something?</h2>
+        <p>Book a discovery call and let's talk about your project.</p>
+        <a href="https://calendly.com/milkhoneycreative" class="btn-luxury primary">Schedule a Discovery Call</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mhc-footer">
+        <div class="mhc-footer-inner">
+            <div class="mhc-footer-logo">
+                <img src="../mhc-logo.svg" alt="Milk & Honey Creative Studio">
+            </div>
+            <nav class="mhc-footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../work.html">Work</a>
+                <a href="../services.html">Services</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+            <div class="mhc-footer-copy">&copy; 2026 Milk &amp; Honey Creative Studio</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -58,59 +58,64 @@
 
             <!-- Form column -->
             <div class="reveal reveal-delay-2">
-                <form action="mailto:nanayaa.ansah@gmail.com" method="post" name="EmailForm" class="contact-form">
+                <form action="https://formsubmit.co/nanayaa.ansah@gmail.com" method="POST" class="contact-form">
+
+                    <!-- Formsubmit config -->
+                    <input type="hidden" name="_subject" value="New Project Inquiry — Milk &amp; Honey Creative Studio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
 
                     <div class="form-group">
                         <label class="form-label" for="inputName">Name</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Your full name">
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Your full name" required>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="inputEmail">Email Address</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="you@yourstartup.com">
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="you@yourstartup.com" required>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="inputBusiness">Company / Startup Name</label>
-                        <input type="text" class="form-control" id="inputBusiness" placeholder="Your company or product name">
+                        <input type="text" class="form-control" id="inputBusiness" name="company" placeholder="Your company or product name">
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="inputWebsite">Website or App URL</label>
-                        <input type="text" class="form-control" id="inputWebsite" placeholder="https:// (if you have one)">
+                        <input type="text" class="form-control" id="inputWebsite" name="website" placeholder="https:// (if you have one)">
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="inputService">What Are You Building?</label>
-                        <select class="form-select" id="inputService">
+                        <select class="form-select" id="inputService" name="service">
                             <option value="" disabled selected>Select a service</option>
-                            <option value="1">AI-Powered App Design</option>
-                            <option value="2">MVP Design &amp; Development</option>
-                            <option value="3">High-Conversion Product Website</option>
-                            <option value="4">Brand Identity &amp; Strategy</option>
-                            <option value="5">Something else — let's talk</option>
+                            <option value="AI-Powered App Design">AI-Powered App Design</option>
+                            <option value="MVP Design & Development">MVP Design &amp; Development</option>
+                            <option value="High-Conversion Product Website">High-Conversion Product Website</option>
+                            <option value="Brand Identity & Strategy">Brand Identity &amp; Strategy</option>
+                            <option value="Something else">Something else — let's talk</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="inputDate">Target Launch Date</label>
-                        <input type="date" class="form-control" id="inputDate">
+                        <input type="date" class="form-control" id="inputDate" name="launch_date">
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="inputBudget">Project Budget</label>
-                        <input type="text" class="form-control" id="inputBudget" placeholder="Your estimated budget range">
+                        <input type="text" class="form-control" id="inputBudget" name="budget" placeholder="Your estimated budget range">
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="inputDiscovery">How Did You Find Me?</label>
-                        <select class="form-select" id="inputDiscovery">
+                        <select class="form-select" id="inputDiscovery" name="source">
                             <option value="" disabled selected>Select one</option>
-                            <option value="1">Instagram</option>
-                            <option value="2">Google</option>
-                            <option value="3">Referral</option>
-                            <option value="4">LinkedIn</option>
-                            <option value="5">Other</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Google">Google</option>
+                            <option value="Referral">Referral</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 64" role="img" aria-label="Milk &amp; Honey Creative Studio">
+
+  <!-- Studio name — italic serif matching Playfair Display brand usage -->
+  <text x="0" y="38"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="30" fill="#1A0D04"
+    font-style="italic" font-weight="400" letter-spacing="1.2">Milk &amp; Honey</text>
+
+  <!-- Gold rule — matches the site's thin section dividers -->
+  <line x1="1" y1="46" x2="222" y2="46" stroke="#C9943A" stroke-width="0.9" opacity="0.5"/>
+
+  <!-- Sub-label — mirrors the .section-label tracked uppercase gold style -->
+  <text x="2" y="59"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="7" fill="#C9943A" letter-spacing="9.5" font-weight="600">CREATIVE STUDIO</text>
+
+</svg>

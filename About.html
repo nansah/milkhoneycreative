@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Milk & Honey Creative Studio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div class="logo"><img src="mhc-logo.png" alt="logo"></div>
-    <div class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://calendly.com/milkhoneycreative"><button class="btn">Schedule a Call</button></a>
-    </div>
-
-</header>
 
 <body>
-    <div class="container">
-        <div class="row" id="aboutme">
-            <div class="col-lg-6">
-                <h2> Hey there!</h2>
-                <p>I’m Nana Yaa Ansah founder of Milk & Honey Creative Studio, your go-to destination for stunning
-                    website designs that are tailored to your passion as a kingdom-minded Christian entrepreneur. I
-                    understand the challenges and opportunities that come with running a small business. That's why I'm
-                    committed to delivering top-notch web design services that not only look beautiful but also generate
-                    results. <br><br>My approach to web design is simple - I work closely with you, listening carefully
-                    to your
-                    vision, goals, and budget to create a website that reflects your unique brand identity and
-                    effectively engages your target audience. I believe a website should be more than just an online
-                    space; it should be a captivating and unforgettable experience for your visitors. Using my expertise
-                    in marketing, psychology, and UX design, I'll make sure that your website provides an optimal user
-                    experience, conversion rates and looks amazing and functions flawlessly on any device. <br><br>At
-                    Milk &
-                    Honey Creative Studio, it's not just about designing a beautiful website - it's about helping your
-                    business succeed online. Whether you need a fresh website design or a revamp of your current site,
-                    I'm here to help you achieve your online goals and take your business to the next level. So, why
-                    wait? Let's work together to create a visually stunning, high-converting, and user-friendly website
-                    that perfectly aligns with your values and business goals. Contact Milk & Honey Creative Studio
-                    today and let's make your online vision a reality! </p>
-                <a href="contact.html"><button class="btn"> Work With Me</button></a>
-            </div>
-            <div class="col-lg-6">
-                <img src="Founder.jpeg" class="img-fluid" />
-            </div>
-            <div class="col">
-            </div>
-        </div>
 
-    </div>
-
-    <div class="row" id="footer">
-        <div class="col-sm-4">
-            <img src="mhc-logo.png" width="150px">
+    <!-- NAVIGATION -->
+    <header class="mhc-header" id="site-header">
+        <div class="mhc-header-inner">
+            <a href="index.html" class="mhc-logo-link">
+                <img src="mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
+            </a>
+            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mhc-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://calendly.com/milkhoneycreative" class="mhc-cta">Schedule a Call</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="col">
-            <div class="col-sm-3">
-                <a href="index.html">
-                    <p>Home</p>
-                </a>
-                <a href="about.html">
-                    <p>About</p>
-                </a>
-                <a href="work.html">
-                    <p>Work</p>
-                </a>
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container-xl">
+            <h1>About the Studio</h1>
+            <p>A boutique digital product studio — one designer, fully invested in your product.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="about-section">
+        <div class="about-grid reveal">
+            <div class="about-grid-content">
+                <span class="section-label">Hey there!</span>
+                <h2>I'm Nana Yaa Ansah</h2>
+                <p>Founder of Milk &amp; Honey Creative Studio — a boutique digital product studio for founders and startups building something worth launching.</p>
+                <p>I'm a digital product designer and strategist with deep expertise in UX design, AI product development, and high-conversion web design. I started this studio because I saw a gap: founders with strong ideas and weak digital presence. I bridge that gap.</p>
+                <p>My approach is collaborative and outcomes-driven. I work closely with you to understand not just what you're building, but why — then design the product experience that brings that vision to life with precision and craft.</p>
+                <p>Drawing on my background in marketing psychology, UX research, and product strategy, every project I take on is built to perform: to convert, to retain, and to grow.</p>
+                <p>At Milk &amp; Honey Creative Studio, it's not just about making things look good — it's about designing digital products that actually work. MVPs that get traction. Apps that users love. Websites that convert. Let's build something together.</p>
+                <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
+                    <a href="contact.html" class="btn-luxury primary">Work With Me</a>
+                    <a href="work.html" class="luxury-link">See My Work</a>
+                </div>
+            </div>
+            <div class="about-grid-img reveal reveal-delay-2">
+                <img src="Founder.jpeg" alt="Nana Yaa Ansah — Founder">
             </div>
         </div>
-        <div class="col">
-            <div class="col-sm-4">
-                <a href="services.html">
-                    <p>Services</p>
-                </a>
-                <a href="contact.html">
-                    <p>Contact Us</p>
-                </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mhc-footer">
+        <div class="mhc-footer-inner">
+            <div class="mhc-footer-logo">
+                <img src="mhc-logo.svg" alt="Milk & Honey Creative Studio">
             </div>
+            <nav class="mhc-footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
         </div>
-        <div class="col">
-            <div>© Milk & Honey Creative Studio 2023. All rights reserved. </div>
-        </div>
-    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

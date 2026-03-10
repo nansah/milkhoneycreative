@@ -1,148 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact | Milk & Honey Creative Studio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div class="logo"><img src="mhc-logo.png" alt="logo"></div>
-    <div class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://calendly.com/milkhoneycreative"><button class="btn">Schedule a Call</button></a>
-    </div>
-
-</header>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <h1>Let's Chat!</h1>
+
+    <!-- NAVIGATION -->
+    <header class="mhc-header" id="site-header">
+        <div class="mhc-header-inner">
+            <a href="index.html" class="mhc-logo-link">
+                <img src="mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
+            </a>
+            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mhc-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://calendly.com/milkhoneycreative" class="mhc-cta">Schedule a Call</a>
+            </nav>
         </div>
-        <div class="row">
-            <p>Please fill out this form with the required information</p>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container-xl">
+            <h1>Start a Project</h1>
+            <p>Tell me what you're building. I'll take it from there.</p>
         </div>
-        <div class="row">
-            <div class="col">
-                <img src="Black+Woman+on+Laptop+Stock+Image.jpeg" alt="Black woman on laptop" width="500px"
-                    id="imgfluid">
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-section">
+        <div class="contact-grid">
+
+            <!-- Info column -->
+            <div class="contact-info reveal">
+                <span class="section-label">Get In Touch</span>
+                <h2>Got a product idea? Let's talk.</h2>
+                <p>Whether you're pre-launch with a rough concept or mid-build and need a design partner to take things to the next level — I want to hear about it.</p>
+                <p>Fill out the form and I'll follow up within 2 business days. Prefer to talk through it directly? Book a call below.</p>
+                <a href="https://calendly.com/milkhoneycreative" class="btn-luxury primary" style="margin-top:1.5rem;">Schedule a Discovery Call</a>
+                <div class="contact-img">
+                    <img src="Black+Woman+on+Laptop+Stock+Image.jpeg" alt="Working on a digital product">
+                </div>
             </div>
-            <div class="col">
-                <form action='mailto:nanayaa.ansah@gmail.com' method="post" name=”EmailForm”>
-                    <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName">
+
+            <!-- Form column -->
+            <div class="reveal reveal-delay-2">
+                <form action="mailto:nanayaa.ansah@gmail.com" method="post" name="EmailForm" class="contact-form">
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Your full name">
                     </div>
-                    <br><br>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputEmail">Email Address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="you@yourstartup.com">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputBusinessName" class="form-label">Business Name</label>
-                        <input type="text" class="form-control" id="exampleInputBusinessName">
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputBusiness">Company / Startup Name</label>
+                        <input type="text" class="form-control" id="inputBusiness" placeholder="Your company or product name">
                     </div>
-                    <br>
-                    <div class="mb-3">
-                        <label for="exampleInputWebsite" class="form-label">Website URL</label>
-                        <input type="text" class="form-control" id="exampleInputWebsite">
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputWebsite">Website or App URL</label>
+                        <input type="text" class="form-control" id="inputWebsite" placeholder="https:// (if you have one)">
                     </div>
-                    <br><br>
-                    <div>
-                        <label for="exampleInputServices" class="form-label"> What type of project are you interested
-                            in?</label>
-                        <br><select class="form-select" aria-label="Default select example">
-                            <option value="1">Custom Website Design</option>
-                            <option value="2">Branding Identity & Strategy</option>
-                            <option value="3">Website Restyling </option>
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputService">What Are You Building?</label>
+                        <select class="form-select" id="inputService">
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="1">AI-Powered App Design</option>
+                            <option value="2">MVP Design &amp; Development</option>
+                            <option value="3">High-Conversion Product Website</option>
+                            <option value="4">Brand Identity &amp; Strategy</option>
+                            <option value="5">Something else — let's talk</option>
                         </select>
                     </div>
-                    <br><br>
-                    <label for="Launch Date">Website Launch Date</label>
-                    <br>
-                    <input type="date">
-                    <br><br>
-                    <div class="mb-3">
-                        <label for="exampleInputInvestment" class="form-label">How much will you invest in this
-                            project?</label>
-                        <input type="text" class="form-control" id="exampleInputInvestment">
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputDate">Target Launch Date</label>
+                        <input type="date" class="form-control" id="inputDate">
                     </div>
-                    <br>
-                    <div>
-                        <label for="exampleInputDiscovery" class="form-label">How did you hear about us?</label>
-                        <br><select class="form-select" aria-label="Default select example">
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputBudget">Project Budget</label>
+                        <input type="text" class="form-control" id="inputBudget" placeholder="Your estimated budget range">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputDiscovery">How Did You Find Me?</label>
+                        <select class="form-select" id="inputDiscovery">
+                            <option value="" disabled selected>Select one</option>
                             <option value="1">Instagram</option>
                             <option value="2">Google</option>
                             <option value="3">Referral</option>
-                            <option value="3">Other</option>
+                            <option value="4">LinkedIn</option>
+                            <option value="5">Other</option>
                         </select>
                     </div>
-                    <br>
-                    <button type="submit" class="btn">Submit</button>
 
+                    <button type="submit" class="btn-luxury primary">Send Message</button>
+                </form>
             </div>
-            <br><br>
-            </form>
-        </div>
-    </div>
-    </div>
-    </div>
 
-    <div class="row" id="footer">
-        <div class="col-sm-4">
-            <img src="mhc-logo.png" width="150px">
         </div>
+    </section>
 
-        <div class="col">
-            <div class="col-sm-3">
-                <a href="index.html">
-                    <p>Home</p>
-                </a>
-                <a href="about.html">
-                    <p>About</p>
-                </a>
-                <a href="work.html">
-                    <p>Work</p>
-                </a>
+    <!-- FOOTER -->
+    <footer class="mhc-footer">
+        <div class="mhc-footer-inner">
+            <div class="mhc-footer-logo">
+                <img src="mhc-logo.svg" alt="Milk & Honey Creative Studio">
             </div>
+            <nav class="mhc-footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
         </div>
-        <div class="col">
-            <div class="col-sm-4">
-                <a href="services.html">
-                    <p>Services</p>
-                </a>
-                <a href="contact.html">
-                    <p>Contact Us</p>
-                </a>
-            </div>
-        </div>
-        <div class="col">
-            <div>
-                <p>© Milk & Honey Creative Studio 2023. All rights reserved. </p>
-            </div>
-        </div>
-    </div>
-    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

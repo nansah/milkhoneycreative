@@ -1,195 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Milk & Honey Creative Studio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Work page section headers */
+        .work-category-header {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: var(--section-pad) 2rem 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .work-category-header:first-of-type {
+            border-top: none;
+            padding-top: calc(var(--section-pad) / 2);
+        }
+        .work-category-header h2 {
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 400;
+            font-style: italic;
+        }
+        .work-category-count {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-style: italic;
+            color: var(--text-muted);
+            white-space: nowrap;
+            padding-bottom: 0.25rem;
+        }
+    </style>
 </head>
-<header>
-    <div class="logo"><img src="mhc-logo.png" alt="logo"></div>
-    <div class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://calendly.com/milkhoneycreative"><button class="btn">Schedule a Call</button></a>
-    </div>
-
-</header>
 
 <body>
+
+    <!-- NAVIGATION -->
+    <header class="mhc-header" id="site-header">
+        <div class="mhc-header-inner">
+            <a href="index.html" class="mhc-logo-link">
+                <img src="mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
+            </a>
+            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mhc-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://calendly.com/milkhoneycreative" class="mhc-cta">Schedule a Call</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container-xl">
+            <h1>Selected Work</h1>
+            <p>A curated look at the digital products, MVPs, and brand websites I've designed and launched.</p>
+        </div>
+    </section>
+
+    <!-- ── MVP & APP DESIGN ─────────────────────────────── -->
+    <div class="work-category-header">
+        <div>
+            <span class="section-label">Category</span>
+            <h2>MVP &amp; App Design</h2>
+        </div>
+        <span class="work-category-count">01 project</span>
+    </div>
+
+    <div class="work-section">
+
+        <div class="work-item reveal">
+            <div class="work-item-img">
+                <img src="+Seamstrust+Isometric+Mockup.png" alt="Seamstrust">
+            </div>
+            <div class="work-item-content">
+                <span class="work-item-num">MVP &amp; Web Application</span>
+                <h2>Seamstrust</h2>
+                <p>A digital directory solving a real and underserved problem: people within the African diaspora struggle to find trustworthy seamstresses due to fragmented information and zero verified sources online.</p>
+                <p>I designed and built an MVP web application — a structured, searchable directory of vetted seamstresses — from initial product concept through launch-ready UX and interface design.</p>
+                <a href="/work/seamstrust.html" class="btn-luxury primary">View Project</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ── WEB DESIGN ────────────────────────────────────── -->
+    <div class="work-category-header">
+        <div>
+            <span class="section-label">Category</span>
+            <h2>Web Design</h2>
+        </div>
+        <span class="work-category-count">04 projects</span>
+    </div>
+
+    <div class="work-section">
+
+        <div class="work-item reveal">
+            <div class="work-item-img">
+                <img src="Alia+Li+mockup.jpg" alt="Alia Li Interior & Event Design Studio">
+            </div>
+            <div class="work-item-content">
+                <span class="work-item-num">Product Website</span>
+                <h2>Alia Li Design Studio</h2>
+                <p>A boutique interior and event design studio needing a digital presence that matched the luxury of their physical work. I executed a full rebrand and product website redesign — minimalist, editorial, high-end — designed to attract premium clientele and drive consultation bookings.</p>
+                <p>The result: a site that converts at the caliber of the brand it represents.</p>
+                <a href="/work/alialidesigns.html" class="btn-luxury primary">View Project</a>
+            </div>
+        </div>
+
+        <div class="work-item reverse reveal">
+            <div class="work-item-img">
+                <img src="work/Boujee+Banker+Mockup.png" alt="Boujee Banker">
+            </div>
+            <div class="work-item-content">
+                <span class="work-item-num">High-Conversion Website</span>
+                <h2>Boujee Banker</h2>
+                <p>A personal finance platform for women built around digital products — ebooks, courses, and live webinars. The existing site wasn't converting. I redesigned it from the ground up with a conversion-first architecture, streamlined user flows, and a bold visual identity aligned with the brand's audience.</p>
+                <p>The redesign directly improved digital product sales and webinar sign-ups.</p>
+                <a href="/work/boujee-banker.html" class="btn-luxury primary">View Project</a>
+            </div>
+        </div>
+
+        <div class="work-item reveal">
+            <div class="work-item-img">
+                <img src="Stallion+Fitness+Portfolio+mockup (1).jpg" alt="Stallion Fitness">
+            </div>
+            <div class="work-item-content">
+                <span class="work-item-num">Brand &amp; Product Website</span>
+                <h2>Stallion Fitness</h2>
+                <p>A holistic lifestyle and fitness brand led by Coach Jenn Eluwa — on a mission to inspire her community to live healthier lives. I redesigned the website, built out a cohesive brand identity, and developed a media kit to position her as a serious influencer and partnership target.</p>
+                <p>The new presence opened doors to brand deals and drove dedicated client growth.</p>
+                <a href="/work/stallionfitness.html" class="btn-luxury primary">View Project</a>
+            </div>
+        </div>
+
+        <div class="work-item reverse reveal">
+            <div class="work-item-img">
+                <img src="House+of+Faith+Ministries.png" alt="House of Faith Ministries">
+            </div>
+            <div class="work-item-content">
+                <span class="work-item-num">Website Design &amp; Development</span>
+                <h2>House of Faith Ministries</h2>
+                <p>A growing ministry that needed a modern digital home capable of serving both their existing congregation and a wider audience discovering them online. I delivered a clean, fast, content-rich website with streamlined navigation for sermons, events, and resources.</p>
+                <p>The result is a welcoming digital experience that works for first-time visitors and long-time members alike.</p>
+                <a href="/work/houseoffaith.html" class="btn-luxury primary">View Project</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+    <section class="work-cta">
+        <div class="work-cta-inner reveal">
+            <span class="section-label" style="justify-content:center;">Start a Project</span>
+            <h2>Ready to build something?</h2>
+            <p>Book a discovery call. I'll listen to your product idea, your goals, and we'll figure out together whether I'm the right fit to build it.</p>
+            <a href="https://calendly.com/milkhoneycreative" class="btn-luxury primary">Schedule a Discovery Call</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mhc-footer">
+        <div class="mhc-footer-inner">
+            <div class="mhc-footer-logo">
+                <img src="mhc-logo.svg" alt="Milk & Honey Creative Studio">
+            </div>
+            <nav class="mhc-footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
-    <div class="row">
-        <div class="parallax">
-            <h2>Client Work</h2>
-        </div>
-    </div>
-    <div id="work-container">
-        <div class="row" id="aliali-row">
-            <div class="col-lg-6">
-                <img src="Alia+Li+mockup.jpg" alt="Alia Li Mockup" id="img-fluid" width="300px" />
-            </div>
-            <div class="col-lg-6">
-                <h2>Alia Li - Interior & Event Design Studio</h2>
-                <p>
-                    Alia Li is a boutique interior and event design studio dedicated to transforming spaces into unforgettable experiences. The project focused on a complete rebrand and website redesign, emphasizing a minimalist yet luxurious aesthetic to attract high-end clientele. The new site showcases Alia Li’s portfolio, services, and design philosophy, making it easy for potential clients to envision their dream space and connect for consultations.
-                </p>
-                <a href="/work/alialidesigns.html"><button class="btn btn-primary">View
-                        Project</button></a>
-            </div>
-        </div>
-        <div class="row" id="boujee-banker-row">
-            <div class="col-lg-6" id="boujeebankersection">
-                <h2>Boujee Banker</h2>
-                <p>The Boujee Banker is helping women all over the world to level up and take control of their
-                    finances and personal development.
-
-                <p> The goal for this redesign was to provide a better user experience for website visitors who are
-                    interested in purchasing an ebook, course or enrolling in a free webinar.</p>
-
-                <p> We also wanted to modernize the website, making it more vibrant, feminine and aligned with the
-                    boss babe aesthetic.</p>
-                <a href="/work/boujee-banker.html"><button class="btn btn-primary">View
-                        Project</button></a>
-            </div>
-            <div class="col-lg-6">
-                <a href="/work/boujee-banker.html"><img src="work/Boujee+Banker+Mockup.png" class="img-fluid"></a>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-lg-6">
-                <img src="Stallion+Fitness+Portfolio+mockup (1).jpg" class="img-fluid">
-
-            </div>
-            <div class="col-lg-6">
-                <h2>Stallion Fitness</h2>
-                <p>Stallion Fitness is a holistic lifestyle and fitness brand founded by Coach Jenn Eluwa. Her mission
-                    is to educate and inspire her community to adopt a healthier lifestyle and motivate them to live
-                    their best life!</p>
-
-                <p> She wants to rebrand, redesign her website and develop a media kit to solidify her identity as a
-                    holistic lifestyle brand and influencer. Taking this step in her business will demonstrate her
-                    impact and aid in securing brand partnerships and dedicated clientele.
-                </p>
-                </p>
-                <a href="/work/stallionfitness.html"><button class="btn btn-primary">View
-                        Project</button></a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>Seamstrust</h2>
-                <p> Web App Solution to solve the problem for people within the African diaspora have a difficult time
-                    finding trustworthy seamstresses due to technology constraints and lack of verified sources.
-                <p>My goal was to Design a digital directory for users to find vetted seamstresses.</p>
-                <a href="/work/seamstrust.html"><button class="btn btn-primary">View
-                        Project</button></a>
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <img src="+Seamstrust+Isometric+Mockup.png" class="img-fluid">
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="House+of+Faith+Ministries.png" class="img-fluid">
-            </div>
-            <div class="col-lg-6">
-                <h2>House of Faith Ministries - Church Website</h2>
-                <p>
-                    House of Faith Ministries needed a welcoming, modern website to serve as a digital home for their congregation and outreach. The project included a fresh design, easy navigation, and features for sharing sermons, events, and ministry resources. The result is a vibrant, faith-centered site that helps the church connect with members and newcomers, making information and inspiration accessible to all.
-                </p>
-                <a href="/work/houseoffaith.html"><button class="btn btn-primary">View
-                        Project</button></a>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="ready-to-work">
-                <h2>Ready to Work?</h2>
-                <p> Let’s see if we’re a fit. </p>
-                <p>Book a discovery call and we’ll discuss your business goals and how we can
-                    partner together to achieve them. </p>
-                <a href="contact.html"><button class="btn">Schedule a Call</button></a>
-            </div>
-            <div class="col">
-                <img src="black woman on laptop.png" class="img-fluid" width="70%">
-            </div>
-        </div>
-
-    </div>
-    </div>
-    </div>
-
-    </div>
-
-
-    </div>
-
-
-    </div>
-
-    </div>
-    <div class="row" id="footer">
-        <div class="col-sm-4">
-            <img src="mhc-logo.png" width="150px">
-        </div>
-
-        <div class="col">
-            <div class="col-sm-3">
-                <a href="index.html">
-                    <p>Home</p>
-                </a>
-                <a href="about.html">
-                    <p>About</p>
-                </a>
-                <a href="work.html">
-                    <p>Work</p>
-                </a>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-sm-4">
-                <a href="services.html">
-                    <p>Services</p>
-                </a>
-                <a href="contact.html">
-                    <p>Contact Us</p>
-                </a>
-            </div>
-        </div>
-        <div class="col">
-            <div>© Milk & Honey Creative Studio 2023. All rights reserved. </div>
-        </div>
-    </div>
-    </div>
-
+    <script src="script.js"></script>
 </body>
-
 </html>

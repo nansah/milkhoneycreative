@@ -198,8 +198,12 @@ p {
 
 .mhc-cta:hover {
   background: var(--gold);
-  border-color: var(--gold);
-  color: var(--white) !important;
+  border-color: var(--gold-dark);
+  color: var(--espresso) !important;
+  box-shadow: 0 4px 16px rgba(201,148,58,0.13);
+  transform: translateY(-2px) scale(1.04);
+  text-shadow: 0 1px 6px rgba(255,255,255,0.12);
+  transition: background var(--t), border-color var(--t), color var(--t), box-shadow var(--t), transform var(--t);
 }
 
 /* Hamburger */

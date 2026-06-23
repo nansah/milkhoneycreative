@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SermonFlow | Milk &amp; Honey Creative Studio</title>
+    <meta name="description" content="SermonFlow — a purpose-built sermon presentation web app designed and developed for House of Faith Ministries by Milk & Honey Creative Studio.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        .project-banner { background: #0f172a; padding: 5rem 2rem 3rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .project-banner .section-label { justify-content: center; color: #6366f1; }
+        .project-banner .section-label::after { background: #6366f1; }
+        .project-banner h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 1rem 0 1rem; color: #fff; }
+        .project-banner p { max-width: 640px; margin: 0 auto; color: rgba(255,255,255,0.65); font-size: 1.05rem; }
+        .project-body { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+        .project-body h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-family: var(--font-display); font-style: italic; font-weight: 400; margin: 3rem 0 1rem; color: var(--espresso); }
+        .project-body h3 { font-size: 1.1rem; font-weight: 600; font-family: var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; font-style: normal; margin: 2rem 0 0.75rem; color: var(--espresso); }
+        .project-body p, .project-body li { color: var(--text-muted); line-height: 1.85; margin-bottom: 1rem; }
+        .project-body ul { padding-left: 1.5rem; margin-bottom: 1.2rem; }
+        .project-body img { width: 100%; border-radius: var(--radius); margin: 1rem 0; box-shadow: var(--shadow-lg); }
+        .project-row { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin: 3rem 0; }
+        .project-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+        .project-cta { background: #0f172a; color: var(--ivory); text-align: center; padding: 5rem 2rem; }
+        .project-cta h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1rem; color: var(--ivory); font-style: italic; }
+        .project-cta p { color: rgba(250,248,245,0.65); margin-bottom: 2rem; }
+        .project-meta { display: flex; gap: 3rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.12); }
+        .project-meta-item { text-align: center; }
+        .project-meta-item strong { display: block; font-family: var(--font-display); font-style: italic; font-size: 0.8rem; color: #818cf8; margin-bottom: 0.2rem; letter-spacing: 0.05em; }
+        .project-meta-item span { font-size: 0.9rem; color: rgba(255,255,255,0.7); }
+        .hero-screenshot { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); margin: 3rem 0; background:#0f172a; }
+        .hero-screenshot img { width: 100%; height: auto; display: block; }
+        @media (max-width: 768px) { .project-row { grid-template-columns: 1fr; } .project-meta { gap: 1.5rem; } }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="mhc-header" id="site-header">
+        <div class="mhc-header-inner">
+            <a href="/" class="mhc-logo-link">
+                <img src="/mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
+            </a>
+            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mhc-nav" id="main-nav">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/schedule.html" class="mhc-cta">Schedule a Call</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PROJECT BANNER -->
+    <section class="project-banner">
+        <span class="section-label">Web Application &amp; MVP</span>
+        <h1>SermonFlow</h1>
+        <p>A purpose-built sermon presentation app designed and developed for churches — giving pastors and worship leaders a polished, professional tool for every service.</p>
+        <div class="project-meta">
+            <div class="project-meta-item">
+                <strong>Client</strong>
+                <span>House of Faith Ministries</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Role</strong>
+                <span>Design &amp; Development</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Type</strong>
+                <span>Web Application</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Live</strong>
+                <span><a href="https://sermonflow-hof.vercel.app/" target="_blank" rel="noopener" style="color:#818cf8;">sermonflow-hof.vercel.app</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT BODY -->
+    <div class="project-body">
+
+        <div class="hero-screenshot">
+            <img src="/images/sermonflow-hero.png" alt="SermonFlow app screenshot">
+        </div>
+
+        <h2>The Problem</h2>
+        <p>Churches have long relied on improvised solutions — PowerPoint slides, printed notes, or generic apps — to present sermons. None of these were built for the specific rhythm and needs of a live church service. Pastors needed something purpose-built: simple to use, distraction-free, and professional enough to reflect the quality of their ministry.</p>
+
+        <h2>The Solution</h2>
+        <p>SermonFlow is a focused, elegant web application built specifically for sermon presentation. Designed with the ministry environment in mind, it gives worship leaders everything they need — and nothing they don't.</p>
+
+        <hr class="project-divider">
+
+        <h3>Key Features</h3>
+        <div class="project-row">
+            <div>
+                <ul>
+                    <li><strong>Full-Screen Presenter Mode</strong> — Clean, distraction-free display designed for congregation viewing</li>
+                    <li><strong>Scripture Lookup</strong> — Instant access to Bible passages, formatted for display</li>
+                    <li><strong>Sermon Note Management</strong> — Organize and navigate sermon content with ease</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Real-Time Display Control</strong> — Toggle slides and sections on the fly during service</li>
+                    <li><strong>Mobile-Friendly Interface</strong> — Manage from any device in the sanctuary</li>
+                    <li><strong>Simple Setup</strong> — Zero learning curve; up and running in minutes</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="project-divider">
+
+        <h2>Design Approach</h2>
+        <p>The app uses a dark, high-contrast interface that performs beautifully on large screens and projectors. Every design decision prioritizes legibility and calm — this is a tool that should disappear into the background while the message takes center stage.</p>
+        <p>The presenter interface is intentionally minimal: large type, clear navigation, and no visual clutter. The audience-facing display is full-bleed and typographically clean, designed to keep eyes on the content, not the chrome.</p>
+
+        <h2>Technology</h2>
+        <p>Built as a modern web application and deployed on Vercel, SermonFlow works on any device with a browser — no app download, no installation, no IT headaches. The stack was chosen to ensure fast load times and reliable performance during live services.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <h2>Ready to build something like this?</h2>
+        <p>Whether you need a custom web app, an MVP, or a brand new digital product — I build what moves your mission forward.</p>
+        <a href="/schedule.html" class="btn-luxury gold">Schedule a Discovery Call</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mhc-footer">
+        <div class="mhc-footer-inner">
+            <div class="mhc-footer-logo">
+                <img src="/mhc-logo.svg" alt="Milk & Honey Creative Studio">
+            </div>
+            <nav class="mhc-footer-nav">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

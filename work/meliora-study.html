@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeiloraStudy | Milk &amp; Honey Creative Studio</title>
+    <meta name="description" content="MeiloraStudy — an AI-powered Bible study companion designed and built by Milk & Honey Creative Studio. Explore scripture deeper with AI insights.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        .project-banner { background: #1e1b4b; padding: 5rem 2rem 3rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .project-banner .section-label { justify-content: center; color: #a78bfa; }
+        .project-banner .section-label::after { background: #a78bfa; }
+        .project-banner h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 1rem 0 1rem; color: #fff; }
+        .project-banner p { max-width: 640px; margin: 0 auto; color: rgba(255,255,255,0.65); font-size: 1.05rem; }
+        .project-body { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+        .project-body h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-family: var(--font-display); font-style: italic; font-weight: 400; margin: 3rem 0 1rem; color: var(--espresso); }
+        .project-body h3 { font-size: 1.1rem; font-weight: 600; font-family: var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; font-style: normal; margin: 2rem 0 0.75rem; color: var(--espresso); }
+        .project-body p, .project-body li { color: var(--text-muted); line-height: 1.85; margin-bottom: 1rem; }
+        .project-body ul { padding-left: 1.5rem; margin-bottom: 1.2rem; }
+        .project-body img { width: 100%; border-radius: var(--radius); margin: 1rem 0; box-shadow: var(--shadow-lg); }
+        .project-row { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin: 3rem 0; }
+        .project-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+        .project-cta { background: #1e1b4b; color: var(--ivory); text-align: center; padding: 5rem 2rem; }
+        .project-cta h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1rem; color: var(--ivory); font-style: italic; }
+        .project-cta p { color: rgba(250,248,245,0.65); margin-bottom: 2rem; }
+        .project-meta { display: flex; gap: 3rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.12); }
+        .project-meta-item { text-align: center; }
+        .project-meta-item strong { display: block; font-family: var(--font-display); font-style: italic; font-size: 0.8rem; color: #a78bfa; margin-bottom: 0.2rem; letter-spacing: 0.05em; }
+        .project-meta-item span { font-size: 0.9rem; color: rgba(255,255,255,0.7); }
+        .hero-screenshot { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); margin: 3rem 0; background:#1e1b4b; }
+        .hero-screenshot img { width: 100%; height: auto; display: block; }
+        @media (max-width: 768px) { .project-row { grid-template-columns: 1fr; } .project-meta { gap: 1.5rem; } }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="mhc-header" id="site-header">
+        <div class="mhc-header-inner">
+            <a href="/" class="mhc-logo-link">
+                <img src="/mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
+            </a>
+            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mhc-nav" id="main-nav">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/schedule.html" class="mhc-cta">Schedule a Call</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PROJECT BANNER -->
+    <section class="project-banner">
+        <span class="section-label">AI-Powered Web Application</span>
+        <h1>MeiloraStudy</h1>
+        <p>An AI Bible study companion that makes deep scripture exploration accessible — AI-guided insights, cross-references, and personalized study plans powered by modern AI.</p>
+        <div class="project-meta">
+            <div class="project-meta-item">
+                <strong>Type</strong>
+                <span>AI Web Application</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Role</strong>
+                <span>Design &amp; Development</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Focus</strong>
+                <span>AI Product, Faith Tech</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Live</strong>
+                <span><a href="https://versewell-io.vercel.app/" target="_blank" rel="noopener" style="color:#a78bfa;">versewell-io.vercel.app</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT BODY -->
+    <div class="project-body">
+
+        <div class="hero-screenshot">
+            <img src="/images/meliora-study-hero.png" alt="MeiloraStudy app screenshot">
+        </div>
+
+        <h2>The Vision</h2>
+        <p>Bible study has traditionally required extensive resources — commentaries, concordances, Bible dictionaries — tools that were either expensive, hard to find, or overwhelming for someone new to scripture. MeiloraStudy was built to change that: to put the depth of a seminary library in the pocket of every believer.</p>
+
+        <h2>The Solution</h2>
+        <p>MeiloraStudy is an AI-powered companion that meets you wherever you are in your faith journey. Whether you're exploring a passage for the first time or doing a deep dive into a specific theme, the app brings rich context, cross-references, and personalized study guidance to every session.</p>
+
+        <hr class="project-divider">
+
+        <h3>Core Features</h3>
+        <div class="project-row">
+            <div>
+                <ul>
+                    <li><strong>AI-Guided Passage Exploration</strong> — Ask any question about any scripture and receive thoughtful, contextual responses</li>
+                    <li><strong>Cross-Reference Discovery</strong> — Automatically surfaces related passages and thematic connections</li>
+                    <li><strong>Historical &amp; Cultural Context</strong> — Background on the time, culture, and author behind every passage</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Personalized Study Plans</strong> — AI-generated reading and study plans based on your goals and interests</li>
+                    <li><strong>Clean, Focused Interface</strong> — Designed to minimize distraction and maximize time in the Word</li>
+                    <li><strong>Works on Any Device</strong> — Fully responsive, accessible from desktop, tablet, or phone</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="project-divider">
+
+        <h2>Design Philosophy</h2>
+        <p>The interface was designed to feel calm, reverent, and intelligent — a space that invites study rather than demands attention. Deep navy tones, clean typography, and generous white space create an environment where the scripture and AI insights are always the focus.</p>
+        <p>Every UX decision was made to reduce friction between the user and the Word — making it as easy as possible to go from a question to a meaningful answer in seconds.</p>
+
+        <h2>Technology &amp; AI</h2>
+        <p>MeiloraStudy is built on a modern full-stack architecture, integrating large language model APIs to provide accurate, context-aware scriptural guidance. The application prioritizes theological sensitivity and accuracy in every AI response, with guardrails designed to keep the experience aligned with the app's faith-centered mission.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <h2>Have an AI product idea?</h2>
+        <p>I design and build AI-powered apps for founders ready to ship something meaningful. Let's talk about what you're building.</p>
+        <a href="/schedule.html" class="btn-luxury gold">Schedule a Discovery Call</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mhc-footer">
+        <div class="mhc-footer-inner">
+            <div class="mhc-footer-logo">
+                <img src="/mhc-logo.svg" alt="Milk & Honey Creative Studio">
+            </div>
+            <nav class="mhc-footer-nav">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

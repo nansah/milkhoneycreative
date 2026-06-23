@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny D's Delicacies | Milk &amp; Honey Creative Studio</title>
+    <meta name="description" content="Danny D's Delicacies — private chef & catering website designed and developed by Milk & Honey Creative Studio. Chef Danielle Williams, New York City.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        .project-banner { background: #0e5f5a; padding: 5rem 2rem 3rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .project-banner .section-label { justify-content: center; color: #e07a3a; }
+        .project-banner .section-label::after { background: #e07a3a; }
+        .project-banner h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 1rem 0 1rem; color: #fff; }
+        .project-banner p { max-width: 640px; margin: 0 auto; color: rgba(255,255,255,0.7); font-size: 1.05rem; }
+        .project-body { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+        .project-body h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-family: var(--font-display); font-style: italic; font-weight: 400; margin: 3rem 0 1rem; color: var(--espresso); }
+        .project-body h3 { font-size: 1.1rem; font-weight: 600; font-family: var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; font-style: normal; margin: 2rem 0 0.75rem; color: var(--espresso); }
+        .project-body p, .project-body li { color: var(--text-muted); line-height: 1.85; margin-bottom: 1rem; }
+        .project-body ul { padding-left: 1.5rem; margin-bottom: 1.2rem; }
+        .project-body img { width: 100%; border-radius: var(--radius); margin: 1rem 0; box-shadow: var(--shadow-lg); }
+        .project-row { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin: 3rem 0; }
+        .project-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+        .project-cta { background: #0e5f5a; color: var(--ivory); text-align: center; padding: 5rem 2rem; }
+        .project-cta h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1rem; color: var(--ivory); font-style: italic; }
+        .project-cta p { color: rgba(250,248,245,0.65); margin-bottom: 2rem; }
+        .project-meta { display: flex; gap: 3rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.12); }
+        .project-meta-item { text-align: center; }
+        .project-meta-item strong { display: block; font-family: var(--font-display); font-style: italic; font-size: 0.8rem; color: #e07a3a; margin-bottom: 0.2rem; letter-spacing: 0.05em; }
+        .project-meta-item span { font-size: 0.9rem; color: rgba(255,255,255,0.75); }
+        .hero-screenshot { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); margin: 3rem 0; background: #0e5f5a; }
+        .hero-screenshot img { width: 100%; height: auto; display: block; }
+        .secondary-screenshot { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); margin: 2rem 0; background: #fff; border: 1px solid var(--border); }
+        .secondary-screenshot img { width: 100%; height: auto; display: block; }
+        .founder-quote { background: #0e5f5a; border-radius: var(--radius); padding: 3rem 2.5rem; margin: 3rem 0; text-align: center; }
+        .founder-quote p { font-family: var(--font-display); font-style: italic; font-size: clamp(1.05rem, 2vw, 1.35rem); color: #fff; line-height: 1.75; margin-bottom: 1.5rem; }
+        .founder-quote cite { font-family: var(--font-body); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #e07a3a; font-style: normal; }
+        .color-palette { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1.5rem 0; }
+        .color-swatch { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+        .color-swatch-box { width: 60px; height: 60px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .color-swatch-label { font-size: 0.65rem; font-family: var(--font-body); color: var(--text-muted); text-align: center; letter-spacing: 0.05em; }
+        @media (max-width: 768px) { .project-row { grid-template-columns: 1fr; } .project-meta { gap: 1.5rem; } .founder-quote { padding: 2rem 1.5rem; } }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="mhc-header" id="site-header">
+        <div class="mhc-header-inner">
+            <a href="/" class="mhc-logo-link">
+                <img src="/mhc-logo.svg" alt="Milk & Honey Creative Studio" class="mhc-logo">
+            </a>
+            <button class="mhc-hamburger" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mhc-nav" id="main-nav">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/schedule.html" class="mhc-cta">Schedule a Call</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PROJECT BANNER -->
+    <section class="project-banner">
+        <span class="section-label">Private Chef &amp; Catering Website</span>
+        <h1>Danny D's Delicacies</h1>
+        <p>A premium digital presence for Chef Danielle Williams — a private chef and catering service rooted in the belief that food moves people.</p>
+        <div class="project-meta">
+            <div class="project-meta-item">
+                <strong>Client</strong>
+                <span>Chef Danielle Williams</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Role</strong>
+                <span>Design &amp; Development</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Type</strong>
+                <span>Brand Website</span>
+            </div>
+            <div class="project-meta-item">
+                <strong>Live</strong>
+                <span><a href="https://chefdannyd.vercel.app/" target="_blank" rel="noopener" style="color:#e07a3a;">chefdannyd.vercel.app</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT BODY -->
+    <div class="project-body">
+
+        <div class="hero-screenshot">
+            <img src="/images/dannyd-hero.png" alt="Danny D's Delicacies website hero screenshot">
+        </div>
+
+        <h2>The Chef</h2>
+        <p>Chef Danielle Williams founded Danny D's Delicacies on a deeply personal conviction: that the ability to move people with food is one of life's greatest gifts. Based in New York City, she offers private chef services and catering experiences that go far beyond a meal — they're moments people remember.</p>
+        <p>With years of culinary experience and an events portfolio that spans intimate dinners to large-scale catering, Chef Danielle needed a digital presence worthy of her craft.</p>
+
+        <div class="founder-quote">
+            <p>"Food brings people together. It's the most basic need of humans and one of life's greatest pleasures. The ability to move people with food is my greatest pleasure and passion."</p>
+            <cite>— Chef Danielle Williams &nbsp;·&nbsp; Founder, Danny D's Delicacies</cite>
+        </div>
+
+        <h2>The Design Challenge</h2>
+        <p>Private chef websites live or die by the emotional experience they create. Visitors need to feel the quality of the food before they ever taste it. That means photography that makes you hungry, copy that makes you feel welcomed, and a visual identity that communicates both warmth and expertise.</p>
+        <p>The challenge was to build something that felt premium without being cold — personal without being informal — and confident without being boastful.</p>
+
+        <hr class="project-divider">
+
+        <h3>Visual Identity</h3>
+        <p>The brand palette pairs a rich forest teal with a warm terracotta orange — a combination that feels both sophisticated and approachable. The teal grounds the brand in depth and professionalism; the terracotta brings the warmth and human touch that defines Chef Danielle's cooking philosophy.</p>
+
+        <div class="color-palette">
+            <div class="color-swatch">
+                <div class="color-swatch-box" style="background:#0e5f5a;"></div>
+                <div class="color-swatch-label">Forest Teal</div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-box" style="background:#e07a3a;"></div>
+                <div class="color-swatch-label">Terracotta</div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-box" style="background:#1a3a38;"></div>
+                <div class="color-swatch-label">Deep Teal</div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-box" style="background:#ffffff; border: 1px solid #e0d8d0;"></div>
+                <div class="color-swatch-label">White</div>
+            </div>
+        </div>
+
+        <div class="secondary-screenshot">
+            <img src="/images/dannyd-palette.png" alt="Danny D's Delicacies visual identity — From Vision to Table section">
+        </div>
+
+        <hr class="project-divider">
+
+        <h3>Pages &amp; Features</h3>
+        <div class="project-row">
+            <div>
+                <ul>
+                    <li><strong>Hero</strong> — Full-bleed food photography with the brand headline "Cooking with Heart and Purpose" and credential stats</li>
+                    <li><strong>About</strong> — Chef Danielle's story and philosophy, written to build trust and emotional connection</li>
+                    <li><strong>Services</strong> — Clear breakdown of private chef and catering offerings with scope and ideal clients</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Menus</strong> — Curated menu presentation that showcases range and culinary point of view</li>
+                    <li><strong>Gallery</strong> — Food and event photography that does the selling before a single word is read</li>
+                    <li><strong>Work With Me</strong> — A streamlined inquiry experience designed to convert visitors into bookings</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="project-divider">
+
+        <h2>The Result</h2>
+        <p>A premium website that finally matches the quality of Chef Danielle's food and the caliber of her clientele. The site gives her a credible, professional home to send potential clients, support her marketing efforts, and grow her catering business in one of the most competitive food markets in the world — New York City.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <h2>Ready to elevate your brand online?</h2>
+        <p>Whether you're a chef, creative, or service provider — I build websites that convert at the level your work deserves.</p>
+        <a href="/schedule.html" class="btn-luxury gold">Schedule a Discovery Call</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mhc-footer">
+        <div class="mhc-footer-inner">
+            <div class="mhc-footer-logo">
+                <img src="/mhc-logo.svg" alt="Milk & Honey Creative Studio">
+            </div>
+            <nav class="mhc-footer-nav">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

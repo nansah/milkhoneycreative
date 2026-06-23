@@ -24,11 +24,11 @@
             </button>
             <nav class="mhc-nav" id="main-nav">
                 <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/work">Work</a>
-                <a href="/services">Services</a>
-                <a href="/contact">Contact</a>
-                <a href="/schedule" class="mhc-cta">Schedule a Call</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/schedule.html" class="mhc-cta">Schedule a Call</a>
             </nav>
         </div>
     </header>
@@ -51,7 +51,7 @@
                 <h2>Got a product idea? Let's talk.</h2>
                 <p>Whether you're pre-launch with a rough concept or mid-build and need a design partner to take things to the next level — I want to hear about it.</p>
                 <p>Fill out the form and I'll follow up within 2 business days. Prefer to talk through it directly? Book a call below.</p>
-                <a href="/schedule" class="btn-luxury primary" style="margin-top:1.5rem;">Schedule a Discovery Call</a>
+                <a href="/schedule.html" class="btn-luxury primary" style="margin-top:1.5rem;">Schedule a Discovery Call</a>
                 <div class="contact-img">
                     <img src="/Black+Woman+on+Laptop+Stock+Image.jpeg" alt="Working on a digital product">
                 </div>
@@ -112,6 +112,7 @@
                         <input type="text" class="form-control" id="inputBudget" name="budget" placeholder="Your estimated budget range">
                     </div>
 
+
                     <div class="form-group">
                         <label class="form-label" for="inputDiscovery">How Did You Find Me?</label>
                         <select class="form-select" id="inputDiscovery" name="source">
@@ -122,6 +123,17 @@
                             <option value="LinkedIn">LinkedIn</option>
                             <option value="Other">Other</option>
                         </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputMessage">Tell me more about your inquiry</label>
+                        <textarea class="form-control" id="inputMessage" name="message" rows="5" placeholder="Share more details or goals for your project or questions you may have..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="inputBot">What is 3 + 4? <span style="color:#bfa14a">(required to prove you're human)</span></label>
+                        <input type="text" class="form-control" id="inputBot" name="botcheck" placeholder="Your answer" required pattern="7">
                     </div>
 
                     <button type="submit" class="btn-luxury primary">Send Message</button>
@@ -139,10 +151,10 @@
             </div>
             <nav class="mhc-footer-nav">
                 <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/work">Work</a>
-                <a href="/services">Services</a>
-                <a href="/contact">Contact</a>
+                <a href="/about.html">About</a>
+                <a href="/work.html">Work</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
             </nav>
             <div class="mhc-footer-copy">&copy; 2025 Milk &amp; Honey Creative Studio</div>
         </div>
@@ -166,6 +178,13 @@
             // Block if submitted in under 3 seconds (bot)
             var loadedAt = parseInt(document.getElementById('formLoadedAt').value, 10);
             if (Date.now() - loadedAt < 3000) {
+                e.preventDefault();
+                return false;
+            }
+            // Simple math bot check
+            var botAnswer = document.getElementById('inputBot').value.trim();
+            if (botAnswer !== '7') {
+                alert('Please answer the bot check question correctly.');
                 e.preventDefault();
                 return false;
             }

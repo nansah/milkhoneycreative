@@ -1,15 +1,26 @@
-Options -Indexes
 RewriteEngine On
+RewriteBase /
+
+# MIME types
+AddType text/css .css
+AddType application/javascript .js
 
 # Redirect .html URLs to clean URLs
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R=301]
 
-# Serve .html file if it exists, even when a directory with same name exists
-RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI}.html -f
-RewriteRule ^([^\.]+)/?$ $1.html [NC,L]
+# Top-level pages
+RewriteRule ^work/?$ /work.html [NC,L]
+RewriteRule ^about/?$ /about.html [NC,L]
+RewriteRule ^services/?$ /services.html [NC,L]
+RewriteRule ^contact/?$ /contact.html [NC,L]
+RewriteRule ^schedule/?$ /schedule.html [NC,L]
 
-# Remove .html extension for all other pages
+# Work sub-pages that conflict with directories
+RewriteRule ^work/stallionfitness/?$ /work/stallionfitness.html [NC,L]
+RewriteRule ^work/seamstrust/?$ /work/seamstrust.html [NC,L]
+
+# All other pages without .html
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^(.+)$ $1.html [NC,L]
